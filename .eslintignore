@@ -4,14 +4,13 @@
 logs
 **/*.backup.*
 **/*.back.*
-
+dist
 node_modules
 bower_components
 cypress
+tests
 *.sublime*
 
 psd
 thumb
 sketch
-
-tests
