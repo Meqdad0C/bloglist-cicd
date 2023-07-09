@@ -1,0 +1,10 @@
+{
+  "rest-client.environmentVariables": {
+    "$shared": {
+      "host": "http://localhost:3003"
+    },
+    "development": {},
+    "production": {},
+    "test": {}
+  }
+}

@@ -1,0 +1,12 @@
+POST {{host}}/api/blogs/649f2074c95f5428ac7b816f/comments
+content-type: application/json
+
+{
+    "content": "This is my second comment"
+}
+
+###
+GET {{host}}/api/blogs/649f2074c95f5428ac7b816f/comments
+content-type: application/json
+
+###

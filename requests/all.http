@@ -1,0 +1,89 @@
+GET {{host}}/api/blogs
+
+###
+POST {{host}}/api/blogs
+Content-Type: application/json
+
+{
+  "title": "Six of Crows",
+  "author": "Meqdad",
+  "url": "Meqdad.com",
+  "likes": 999
+}
+
+###
+POST {{host}}/api/users
+Content-Type: application/json
+
+{
+    "username": "ciri",
+    "name": "Cirilla",
+    "password": "dodo"
+}
+
+###
+POST {{host}}/api/blogs
+Content-Type: application/json
+
+{
+  "title": "Hearts of Stone",
+  "author": "Garelt",
+  "url": "dodo.com",
+  "userID": "649781348c8837922c2464ed"
+}
+
+###
+POST {{host}}/api/blogs
+Content-Type: application/json
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Im1lcWRhZCIsImlkIjoiNjQ5ZWRhMDAwMGY1Njg4NjZmMDQwMjBjIiwiaWF0IjoxNjg4MTMyMTIyfQ.ARsJUq1VEvhJEI8Hhy199k4kKSrjH8KdXq-Ot-dcQIY
+
+{
+  "author": "Sophia",
+  "likes": 999,
+  "title": "To Kill a Mockingbird",
+  "url": "SophiaBooks.com",
+  "user": "649eda0000f568866f04020c"
+}
+
+###
+PUT {{host}}/api/blogs/6498174a2b22c31b6ef20682
+Content-Type: application/json
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNpcmkiLCJpZCI6IjY0OTc5Y2FmYzNjMjgyNWJlOWZiMzJmZCIsImlhdCI6MTY4NzY4ODk1Mn0.TSoNBw7q5vKtnEEpShLjVsvDeXPqAxTyCkrw8b5rjdA
+
+{
+  "likes": 100,
+  "url": "Meqdad.meq"
+}
+
+###
+PUT {{host}}/api/blogs/649781478c8837922c2464f3
+Content-Type: application/json
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNpcmkiLCJpZCI6IjY0OTc5Y2FmYzNjMjgyNWJlOWZiMzJmZCIsImlhdCI6MTY4NzY2MDk5Mn0.6YxNaS44BD2ElSDJjdepS80fycYdPhMK3aEMGH55M5k
+
+{
+  "likes": 100,
+  "url": "Meqdad.meq"
+}
+
+###
+GET {{host}}/api/blogs
+Content-Type: application/json
+
+###
+GET {{host}}/api/users
+Content-Type: application/json
+
+
+###
+POST {{host}}/api/login
+Content-Type: application/json
+
+{
+  "username": "meqdad",
+  "password": "dodo"
+}
+
+###
+DELETE {{host}}/api/blogs/6498433706363ce738e74b8d
+Content-Type: application/json
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNpcmkiLCJpZCI6IjY0OTc5Y2FmYzNjMjgyNWJlOWZiMzJmZCIsImlhdCI6MTY4NzY4ODk1Mn0.TSoNBw7q5vKtnEEpShLjVsvDeXPqAxTyCkrw8b5rjdA
