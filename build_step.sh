@@ -2,4 +2,4 @@
 
 echo "Build script"
 
-npm install --production && cd bloglist-frontend && npm install --production && cd .. && npm run build:ui
+cd bloglist-frontend && npm install && cd  .. && npm i --production  && npm run build:ui
