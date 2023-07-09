@@ -21,4 +21,5 @@ coverage
 *.njsproj
 *.sln
 *.sw?
-!/cypress/videos/
+cypress/videos/
+cypress/screenshots/

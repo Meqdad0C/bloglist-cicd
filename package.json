@@ -8,7 +8,7 @@
     "test": "NODE_ENV=test jest --verbose --runInBand",
     "lint": "eslint .",
     "start:test": "NODE_ENV=test node src/index.js",
-    "build:ui": "rm -rf dist && cd ../../part5/bloglist-frontend && npm run build && cp -r dist ../../part4/bloglist"
+    "build:ui": "rm -rf dist && cd ./bloglist-frontend && npm run build && cp -r dist .."
   },
   "dependencies": {
     "@cypress/vite-dev-server": "^5.0.5",
