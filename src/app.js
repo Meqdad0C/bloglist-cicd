@@ -28,7 +28,10 @@ if (process.env.NODE_ENV === 'test') {
 }
 
 app.get('/version', (req, res) => {
-  res.send('<h1>Meqdad Amr v0.0.1</h1>')
+  res.send('<h1>Meqdad Amr v0.0.2</h1>')
+})
+app.get('/health', (req, res) => {
+  res.send('ok')
 })
 
 app.use(middleware.unknownEndpoint)
