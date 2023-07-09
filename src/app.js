@@ -27,8 +27,8 @@ if (process.env.NODE_ENV === 'test') {
   app.use('/api/testing', testingRouter)
 }
 
-app.get('/', (req, res) => {
-  res.send('<h1>Meqdad Amr</h1>')
+app.get('/version', (req, res) => {
+  res.send('<h1>Meqdad Amr v0.0.1</h1>')
 })
 
 app.use(middleware.unknownEndpoint)
